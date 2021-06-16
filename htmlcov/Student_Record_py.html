@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content="IE=emulateIE7" http-equiv="X-UA-Compatible"/>
+    <title>Coverage for Student_Record.py: 8%</title>
+    <link href="favicon_32.png" rel="icon" sizes="32x32">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.hotkeys.js" type="text/javascript"></script>
+    <script src="jquery.isonscreen.js" type="text/javascript"></script>
+    <script src="coverage_html.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>Student_Record.py</b> :
+            <span class="pc_cov">8%</span>
+        </h1>
+        <img alt="Show keyboard shortcuts" id="keyboard_icon" src="keybd_closed.png"/>
+        <h2 class="stats">
+            147 statements &nbsp;
+            <button class="run shortkey_r button_toggle_run" title="Toggle lines run" type="button">12 run</button>
+            <button class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing" type="button">135
+                missing
+            </button>
+            <button class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded" type="button">0
+                excluded
+            </button>
+        </h2>
+    </div>
+</div>
+<div class="help_panel">
+    <img alt="Hide keyboard shortcuts" id="panel_icon" src="keybd_open.png"/>
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+        <p class="keyhelp">
+            <span class="key">r</span>
+            <span class="key">m</span>
+            <span class="key">x</span>
+            <span class="key">p</span> &nbsp; toggle line displays
+        </p>
+        <p class="keyhelp">
+            <span class="key">j</span>
+            <span class="key">k</span> &nbsp; next/prev highlighted chunk
+        </p>
+        <p class="keyhelp">
+            <span class="key">0</span> &nbsp; (zero) top of page
+        </p>
+        <p class="keyhelp">
+            <span class="key">1</span> &nbsp; (one) first highlighted chunk
+        </p>
+    </div>
+</div>
+<div id="source">
+    <p class="run" id="t1"><span class="n"><a href="#t1">1</a></span><span class="t"><span
+            class="key">import</span> <span class="nam">os</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t2"><span class="n"><a href="#t2">2</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t3"><span class="n"><a href="#t3">3</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t4"><span class="n"><a href="#t4">4</a></span><span class="t"><span
+            class="key">class</span> <span class="nam">StudentData</span><span class="op">(</span><span class="nam">object</span><span
+            class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run" id="t5"><span class="n"><a href="#t5">5</a></span><span class="t">    <span
+            class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t6"><span class="n"><a href="#t6">6</a></span><span class="t">        <span class="nam">self</span><span
+            class="op">.</span><span class="nam">FNam</span><span class="op">=</span><span
+            class="str">''</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t7"><span class="n"><a href="#t7">7</a></span><span class="t">        <span class="nam">self</span><span
+            class="op">.</span><span class="nam">LName</span><span class="op">=</span><span class="str">''</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t8"><span class="n"><a href="#t8">8</a></span><span class="t">        <span class="nam">self</span><span
+            class="op">.</span><span class="nam">MobileNo</span><span class="op">=</span><span class="str">''</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t9"><span class="n"><a href="#t9">9</a></span><span class="t">        <span class="nam">self</span><span
+            class="op">.</span><span class="nam">City</span><span class="op">=</span><span
+            class="str">''</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t10"><span class="n"><a href="#t10">10</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">Email</span><span class="op">=</span><span
+            class="str">''</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t11"><span class="n"><a href="#t11">11</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">Profession</span><span class="op">=</span><span
+            class="str">''</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t12"><span class="n"><a href="#t12">12</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">f_r</span> <span class="op">=</span> <span
+            class="nam">open</span><span class="op">(</span><span class="str">"Student Record.txt"</span><span
+            class="op">,</span> <span class="nam">mode</span><span class="op">=</span><span class="str">'a'</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t13"><span class="n"><a href="#t13">13</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t14"><span class="n"><a href="#t14">14</a></span><span class="t">    <span class="key">def</span> <span
+            class="nam">AdressBook</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span><span
+            class="nam">firstName</span><span class="op">,</span><span class="nam">lastName</span><span
+            class="op">,</span><span class="nam">Mb</span><span class="op">,</span><span class="nam">City</span><span
+            class="op">,</span><span class="nam">Email</span><span class="op">,</span><span
+            class="nam">Profession</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t15"><span class="n"><a href="#t15">15</a></span><span class="t">        <span class="com">#print("We are going to save a contact!")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t16"><span class="n"><a href="#t16">16</a></span><span class="t">        <span
+            class="nam">f_W</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'a'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t17"><span class="n"><a href="#t17">17</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">FName</span> <span
+            class="op">=</span> <span class="nam">firstName</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t18"><span class="n"><a href="#t18">18</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">LName</span> <span
+            class="op">=</span> <span class="nam">lastName</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t19"><span class="n"><a href="#t19">19</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">MobileNo</span> <span class="op">=</span> <span
+            class="nam">Mb</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t20"><span class="n"><a href="#t20">20</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">City</span> <span
+            class="op">=</span> <span class="nam">City</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t21"><span class="n"><a href="#t21">21</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">Email</span> <span
+            class="op">=</span> <span class="nam">Email</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t22"><span class="n"><a href="#t22">22</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">Profession</span> <span
+            class="op">=</span> <span class="nam">Profession</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t23"><span class="n"><a href="#t23">23</a></span><span class="t">        <span
+            class="nam">f_W</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">.</span><span class="nam">FName</span> <span
+            class="op">+</span> <span class="str">","</span> <span class="op">+</span> <span
+            class="nam">self</span><span class="op">.</span><span class="nam">LName</span> <span
+            class="op">+</span> <span class="str">","</span> <span class="op">+</span><span class="nam">self</span><span
+            class="op">.</span><span class="nam">MobileNo</span> <span class="op">+</span> <span class="str">","</span> <span
+            class="op">+</span> <span class="nam">self</span><span class="op">.</span><span
+            class="nam">City</span> <span class="op">+</span> <span class="str">","</span> <span
+            class="op">+</span> <span class="nam">self</span><span class="op">.</span><span
+            class="nam">Email</span> <span class="op">+</span> <span class="str">","</span> <span
+            class="op">+</span> <span class="nam">self</span><span class="op">.</span><span
+            class="nam">Profession</span> <span class="op">+</span> <span class="str">'\n'</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t24"><span class="n"><a href="#t24">24</a></span><span class="t">        <span
+            class="key">return</span> <span class="str">"Saved"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t25"><span class="n"><a href="#t25">25</a></span><span class="t">        <span
+            class="nam">f_W</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t26"><span class="n"><a href="#t26">26</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t27"><span class="n"><a href="#t27">27</a></span><span class="t">    <span class="key">def</span> <span
+            class="nam">SearchByFirstName</span><span class="op">(</span><span class="nam">self</span><span
+            class="op">,</span> <span class="nam">FName_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t28"><span class="n"><a href="#t28">28</a></span><span class="t">        <span class="com">#print("We are going to search record by First Name")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t29"><span class="n"><a href="#t29">29</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t30"><span class="n"><a href="#t30">30</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t31"><span class="n"><a href="#t31">31</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t32"><span class="n"><a href="#t32">32</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t33"><span class="n"><a href="#t33">33</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t34"><span class="n"><a href="#t34">34</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t35"><span class="n"><a href="#t35">35</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t36"><span class="n"><a href="#t36">36</a></span><span class="t">                <span
+            class="key">if</span> <span class="op">(</span><span class="nam">L</span><span class="op">[</span><span
+            class="num">0</span><span class="op">]</span> <span class="op">==</span> <span
+            class="nam">FName_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t37"><span class="n"><a href="#t37">37</a></span><span
+            class="t">                    <span class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span
+            class="op">+</span> <span class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t38"><span class="n"><a href="#t38">38</a></span><span class="t">                    <span
+            class="com"># print("Here is your Record which You want to search")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t39"><span class="n"><a href="#t39">39</a></span><span class="t">                    <span
+            class="com"># print("self.FName is: ", L[0])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t40"><span class="n"><a href="#t40">40</a></span><span class="t">                    <span
+            class="com"># print("self.LName is: ", L[1])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t41"><span class="n"><a href="#t41">41</a></span><span class="t">                    <span
+            class="com"># print("Mobile No is: ", L[2])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t42"><span class="n"><a href="#t42">42</a></span><span class="t">                    <span
+            class="com"># print("self.City is: ", L[3])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t43"><span class="n"><a href="#t43">43</a></span><span class="t">                    <span
+            class="com"># print("self.Email is: ", L[4])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t44"><span class="n"><a href="#t44">44</a></span><span class="t">                    <span
+            class="com"># print("self.Profession is: ", L[5])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t45"><span class="n"><a href="#t45">45</a></span><span
+            class="t">                    <span class="key">return</span> <span
+            class="str">"Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t46"><span class="n"><a href="#t46">46</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t47"><span class="n"><a href="#t47">47</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t48"><span class="n"><a href="#t48">48</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t49"><span class="n"><a href="#t49">49</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t50"><span class="n"><a href="#t50">50</a></span><span class="t">    <span class="key">def</span> <span
+            class="nam">SearchByMobile</span><span class="op">(</span><span class="nam">self</span><span
+            class="op">,</span><span class="nam">Mobile_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t51"><span class="n"><a href="#t51">51</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t52"><span class="n"><a href="#t52">52</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t53"><span class="n"><a href="#t53">53</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t54"><span class="n"><a href="#t54">54</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t55"><span class="n"><a href="#t55">55</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t56"><span class="n"><a href="#t56">56</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t57"><span class="n"><a href="#t57">57</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t58"><span class="n"><a href="#t58">58</a></span><span class="t">                <span
+            class="key">if</span> <span class="op">(</span><span class="nam">L</span><span class="op">[</span><span
+            class="num">2</span><span class="op">]</span> <span class="op">==</span> <span
+            class="nam">Mobile_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t59"><span class="n"><a href="#t59">59</a></span><span
+            class="t">                    <span class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span
+            class="op">+</span> <span class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t60"><span class="n"><a href="#t60">60</a></span><span class="t">                    <span
+            class="com"># print("Here is your Record which You want to search")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t61"><span class="n"><a href="#t61">61</a></span><span class="t">                    <span
+            class="com"># print("self.FName is: ", L[0])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t62"><span class="n"><a href="#t62">62</a></span><span class="t">                    <span
+            class="com"># print("self.LName is: ", L[1])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t63"><span class="n"><a href="#t63">63</a></span><span class="t">                    <span
+            class="com"># print("Mobile No is: ", L[2])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t64"><span class="n"><a href="#t64">64</a></span><span class="t">                    <span
+            class="com"># print("self.City is: ", L[3])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t65"><span class="n"><a href="#t65">65</a></span><span class="t">                    <span
+            class="com"># print("self.Email is: ", L[4])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t66"><span class="n"><a href="#t66">66</a></span><span class="t">                    <span
+            class="com"># print("self.Profession is: ", L[5])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t67"><span class="n"><a href="#t67">67</a></span><span
+            class="t">                    <span class="key">return</span> <span
+            class="str">"Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t68"><span class="n"><a href="#t68">68</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t69"><span class="n"><a href="#t69">69</a></span><span class="t">            <span class="com">#print("This Mobile Number is not in our record Sorry!")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t70"><span class="n"><a href="#t70">70</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t71"><span class="n"><a href="#t71">71</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t72"><span class="n"><a href="#t72">72</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t73"><span class="n"><a href="#t73">73</a></span><span class="t">    <span class="key">def</span> <span
+            class="nam">SearchByEmail</span><span class="op">(</span><span class="nam">self</span><span
+            class="op">,</span><span class="nam">Email_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t74"><span class="n"><a href="#t74">74</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t75"><span class="n"><a href="#t75">75</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t76"><span class="n"><a href="#t76">76</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t77"><span class="n"><a href="#t77">77</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t78"><span class="n"><a href="#t78">78</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t79"><span class="n"><a href="#t79">79</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t80"><span class="n"><a href="#t80">80</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t81"><span class="n"><a href="#t81">81</a></span><span class="t">                <span
+            class="key">if</span> <span class="op">(</span><span class="nam">L</span><span class="op">[</span><span
+            class="num">4</span><span class="op">]</span> <span class="op">==</span> <span
+            class="nam">Email_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t82"><span class="n"><a href="#t82">82</a></span><span
+            class="t">                    <span class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span
+            class="op">+</span> <span class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t83"><span class="n"><a href="#t83">83</a></span><span class="t">                    <span
+            class="com"># print("Here is your Record which You want to search")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t84"><span class="n"><a href="#t84">84</a></span><span class="t">                    <span
+            class="com"># print("self.FName is: ", L[0])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t85"><span class="n"><a href="#t85">85</a></span><span class="t">                    <span
+            class="com"># print("self.LName is: ", L[1])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t86"><span class="n"><a href="#t86">86</a></span><span class="t">                    <span
+            class="com"># print("Mobile No is: ", L[2])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t87"><span class="n"><a href="#t87">87</a></span><span class="t">                    <span
+            class="com"># print("self.City is: ", L[3])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t88"><span class="n"><a href="#t88">88</a></span><span class="t">                    <span
+            class="com"># print("self.Email is: ", L[4])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t89"><span class="n"><a href="#t89">89</a></span><span class="t">                    <span
+            class="com"># print("self.Profession is: ", L[5])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t90"><span class="n"><a href="#t90">90</a></span><span
+            class="t">                    <span class="key">return</span> <span
+            class="str">"Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t91"><span class="n"><a href="#t91">91</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t92"><span class="n"><a href="#t92">92</a></span><span class="t">            <span class="com">#print("This self.Email is not in our record Sorry!")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t93"><span class="n"><a href="#t93">93</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t94"><span class="n"><a href="#t94">94</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t95"><span class="n"><a href="#t95">95</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t96"><span class="n"><a href="#t96">96</a></span><span class="t">    <span class="key">def</span> <span
+            class="nam">SpecialSearchByFirstName</span><span class="op">(</span><span class="nam">self</span><span
+            class="op">,</span> <span class="nam">FName_S</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t97"><span class="n"><a href="#t97">97</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t98"><span class="n"><a href="#t98">98</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t99"><span class="n"><a href="#t99">99</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t100"><span class="n"><a href="#t100">100</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t101"><span class="n"><a href="#t101">101</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t102"><span class="n"><a href="#t102">102</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t103"><span class="n"><a href="#t103">103</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t104"><span class="n"><a href="#t104">104</a></span><span
+            class="t">                <span class="key">if</span> <span class="op">(</span><span
+            class="nam">L</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span
+            class="op">.</span><span class="nam">find</span><span class="op">(</span><span
+            class="nam">FName_S</span><span class="op">)</span> <span class="op">!=</span> <span
+            class="op">-</span><span class="num">1</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t105"><span class="n"><a href="#t105">105</a></span><span class="t">                    <span
+            class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span class="op">+</span> <span
+            class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t106"><span class="n"><a href="#t106">106</a></span><span class="t">                    <span
+            class="com"># print("Here is your Record which You want to search")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="pln" id="t107"><span class="n"><a href="#t107">107</a></span><span class="t">                    <span
+            class="com"># print("self.FName is: ", L[0])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t108"><span class="n"><a href="#t108">108</a></span><span class="t">                    <span
+            class="com"># print("self.LName is: ", L[1])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t109"><span class="n"><a href="#t109">109</a></span><span class="t">                    <span
+            class="com"># print("Mobile No is: ", L[2])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t110"><span class="n"><a href="#t110">110</a></span><span class="t">                    <span
+            class="com"># print("self.City is: ", L[3])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t111"><span class="n"><a href="#t111">111</a></span><span class="t">                    <span
+            class="com"># print("self.Email is: ", L[4])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t112"><span class="n"><a href="#t112">112</a></span><span class="t">                    <span
+            class="com"># print("self.Profession is: ", L[5])</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t113"><span class="n"><a href="#t113">113</a></span><span class="t">                    <span
+            class="key">return</span> <span class="str">"Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t114"><span class="n"><a href="#t114">114</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t115"><span class="n"><a href="#t115">115</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Found"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t116"><span class="n"><a href="#t116">116</a></span><span class="t">            <span
+            class="com">#print("This First Name key is not in our record Sorry!")</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t117"><span class="n"><a href="#t117">117</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t118"><span class="n"><a href="#t118">118</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t119"><span class="n"><a href="#t119">119</a></span><span class="t">    <span
+            class="key">def</span> <span class="nam">DeleteRecordByName</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">,</span><span class="nam">FName_SU</span><span
+            class="op">,</span> <span class="nam">Email_SU</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t120"><span class="n"><a href="#t120">120</a></span><span class="t">        <span
+            class="nam">print</span><span class="op">(</span><span class="str">"We are going to delete record by First Name"</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t121"><span class="n"><a href="#t121">121</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t122"><span class="n"><a href="#t122">122</a></span><span class="t">        <span
+            class="nam">f_w</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"UpdateStudent Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'w'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t123"><span class="n"><a href="#t123">123</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t124"><span class="n"><a href="#t124">124</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t125"><span class="n"><a href="#t125">125</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t126"><span class="n"><a href="#t126">126</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t127"><span class="n"><a href="#t127">127</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t128"><span class="n"><a href="#t128">128</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t129"><span class="n"><a href="#t129">129</a></span><span
+            class="t">                <span class="key">if</span> <span class="op">(</span><span
+            class="nam">L</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span
+            class="op">!=</span> <span class="nam">FName_SU</span> <span class="key">and</span> <span
+            class="nam">L</span><span class="op">[</span><span class="num">4</span><span class="op">]</span> <span
+            class="op">!=</span> <span class="nam">Email_SU</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t130"><span class="n"><a href="#t130">130</a></span><span class="t">                    <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span
+            class="nam">s</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t131"><span class="n"><a href="#t131">131</a></span><span
+            class="t">                <span class="key">elif</span> <span class="op">(</span><span
+            class="nam">L</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span
+            class="op">==</span> <span class="nam">FName_SU</span> <span class="key">and</span> <span
+            class="nam">L</span><span class="op">[</span><span class="num">4</span><span class="op">]</span> <span
+            class="op">==</span> <span class="nam">Email_SU</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t132"><span class="n"><a href="#t132">132</a></span><span class="t">                    <span
+            class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span class="op">+</span> <span
+            class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t133"><span class="n"><a href="#t133">133</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t134"><span class="n"><a href="#t134">134</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Deleted"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t135"><span class="n"><a href="#t135">135</a></span><span class="t">        <span class="key">else</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t136"><span class="n"><a href="#t136">136</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Deleted"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t137"><span class="n"><a href="#t137">137</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t138"><span class="n"><a href="#t138">138</a></span><span class="t">        <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t139"><span class="n"><a href="#t139">139</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t140"><span class="n"><a href="#t140">140</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">rename</span><span class="op">(</span><span
+            class="str">r'E:\Semester 8\WEB\Labs\UpdateStudent Record.txt'</span><span class="op">,</span> <span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t141"><span class="n"><a href="#t141">141</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t142"><span class="n"><a href="#t142">142</a></span><span class="t">    <span
+            class="key">def</span> <span class="nam">AllDeleteRecordByName</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">,</span><span class="nam">FName_SU</span><span
+            class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t143"><span class="n"><a href="#t143">143</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t144"><span class="n"><a href="#t144">144</a></span><span class="t">        <span
+            class="nam">f_w</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"UpdateStudent Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'w'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t145"><span class="n"><a href="#t145">145</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t146"><span class="n"><a href="#t146">146</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t147"><span class="n"><a href="#t147">147</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t148"><span class="n"><a href="#t148">148</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t149"><span class="n"><a href="#t149">149</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t150"><span class="n"><a href="#t150">150</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t151"><span class="n"><a href="#t151">151</a></span><span
+            class="t">                <span class="key">if</span> <span class="op">(</span><span
+            class="nam">L</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span
+            class="op">!=</span> <span class="nam">FName_SU</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t152"><span class="n"><a href="#t152">152</a></span><span class="t">                    <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span
+            class="nam">s</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t153"><span class="n"><a href="#t153">153</a></span><span
+            class="t">                <span class="key">elif</span> <span class="op">(</span><span
+            class="nam">L</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span
+            class="op">==</span> <span class="nam">FName_SU</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t154"><span class="n"><a href="#t154">154</a></span><span class="t">                    <span
+            class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span class="op">+</span> <span
+            class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t155"><span class="n"><a href="#t155">155</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t156"><span class="n"><a href="#t156">156</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Deleted"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t157"><span class="n"><a href="#t157">157</a></span><span class="t">        <span class="key">else</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t158"><span class="n"><a href="#t158">158</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Deleted"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t159"><span class="n"><a href="#t159">159</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t160"><span class="n"><a href="#t160">160</a></span><span class="t">        <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t161"><span class="n"><a href="#t161">161</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t162"><span class="n"><a href="#t162">162</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">rename</span><span class="op">(</span><span
+            class="str">r'E:\Semester 8\WEB\Labs\UpdateStudent Record.txt'</span><span class="op">,</span> <span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t163"><span class="n"><a href="#t163">163</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t164"><span class="n"><a href="#t164">164</a></span><span class="t">    <span
+            class="key">def</span> <span class="nam">UpdateRecord</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">,</span><span class="nam">FName_SU</span><span
+            class="op">,</span><span class="nam">Updated_fname</span><span class="op">,</span><span class="nam">Updated_lname</span><span
+            class="op">,</span><span class="nam">Updated_mb</span><span class="op">,</span><span class="nam">Updated_city</span><span
+            class="op">,</span><span class="nam">Updated_email</span><span class="op">,</span><span class="nam">Updated_Prof</span><span
+            class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t165"><span class="n"><a href="#t165">165</a></span><span class="t">        <span
+            class="nam">f_r</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'r'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t166"><span class="n"><a href="#t166">166</a></span><span class="t">        <span
+            class="nam">f_w</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span
+            class="str">"UpdateStudent Record.txt"</span><span class="op">,</span> <span class="nam">mode</span><span
+            class="op">=</span><span class="str">'w'</span><span class="op">)</span>&nbsp;</span><span class="r"></span>
+    </p>
+    <p class="mis show_mis" id="t167"><span class="n"><a href="#t167">167</a></span><span class="t">        <span
+            class="nam">s</span> <span class="op">=</span> <span class="str">' '</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t168"><span class="n"><a href="#t168">168</a></span><span class="t">        <span
+            class="nam">count</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t169"><span class="n"><a href="#t169">169</a></span><span class="t">        <span
+            class="key">while</span> <span class="op">(</span><span class="nam">s</span><span class="op">)</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t170"><span class="n"><a href="#t170">170</a></span><span class="t">            <span
+            class="nam">s</span> <span class="op">=</span> <span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">readline</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t171"><span class="n"><a href="#t171">171</a></span><span class="t">            <span
+            class="nam">L</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span
+            class="nam">split</span><span class="op">(</span><span class="str">","</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t172"><span class="n"><a href="#t172">172</a></span><span class="t">            <span
+            class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">s</span><span
+            class="op">)</span> <span class="op">></span> <span class="num">0</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t173"><span class="n"><a href="#t173">173</a></span><span
+            class="t">                <span class="key">if</span> <span class="op">(</span><span
+            class="nam">L</span><span class="op">[</span><span class="num">0</span><span class="op">]</span> <span
+            class="op">==</span> <span class="nam">FName_SU</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t174"><span class="n"><a href="#t174">174</a></span><span class="t">                    <span
+            class="nam">count</span> <span class="op">=</span> <span class="nam">count</span> <span class="op">+</span> <span
+            class="num">1</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t175"><span class="n"><a href="#t175">175</a></span><span class="t">                    <span
+            class="nam">self</span><span class="op">.</span><span class="nam">FName</span> <span
+            class="op">=</span> <span class="nam">Updated_fname</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t176"><span class="n"><a href="#t176">176</a></span><span class="t">                    <span
+            class="nam">self</span><span class="op">.</span><span class="nam">LName</span> <span
+            class="op">=</span> <span class="nam">Updated_lname</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t177"><span class="n"><a href="#t177">177</a></span><span class="t">                    <span
+            class="nam">self</span><span class="op">.</span><span class="nam">MobileNo</span> <span class="op">=</span> <span
+            class="nam">Updated_mb</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t178"><span class="n"><a href="#t178">178</a></span><span class="t">                    <span
+            class="nam">self</span><span class="op">.</span><span class="nam">City</span> <span
+            class="op">=</span> <span class="nam">Updated_city</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t179"><span class="n"><a href="#t179">179</a></span><span class="t">                    <span
+            class="nam">self</span><span class="op">.</span><span class="nam">Email</span> <span
+            class="op">=</span> <span class="nam">Updated_email</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t180"><span class="n"><a href="#t180">180</a></span><span class="t">                    <span
+            class="nam">self</span><span class="op">.</span><span class="nam">Profession</span> <span
+            class="op">=</span> <span class="nam">Updated_Prof</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t181"><span class="n"><a href="#t181">181</a></span><span class="t">                    <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">.</span><span class="nam">FName</span> <span
+            class="op">+</span> <span class="str">","</span> <span class="op">+</span> <span
+            class="nam">self</span><span class="op">.</span><span class="nam">LName</span> <span
+            class="op">+</span> <span class="str">","</span> <span class="op">+</span> <span
+            class="nam">self</span><span class="op">.</span><span class="nam">MobileNo</span> <span class="op">+</span> <span
+            class="str">","</span> <span class="op">+</span> <span class="nam">self</span><span class="op">.</span><span
+            class="nam">City</span> <span class="op">+</span> <span class="str">","</span> <span
+            class="op">+</span> <span class="nam">self</span><span class="op">.</span><span
+            class="nam">Email</span> <span class="op">+</span> <span class="str">","</span> <span
+            class="op">+</span> <span class="nam">self</span><span class="op">.</span><span
+            class="nam">Profession</span> <span class="op">+</span> <span class="str">'\n'</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t182"><span class="n"><a href="#t182">182</a></span><span class="t">                <span
+            class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t183"><span class="n"><a href="#t183">183</a></span><span class="t">                    <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span
+            class="nam">s</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t184"><span class="n"><a href="#t184">184</a></span><span class="t">        <span
+            class="key">if</span> <span class="nam">count</span> <span class="op">==</span> <span
+            class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t185"><span class="n"><a href="#t185">185</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Not Updated"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t186"><span class="n"><a href="#t186">186</a></span><span class="t">        <span class="key">else</span><span
+            class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t187"><span class="n"><a href="#t187">187</a></span><span class="t">            <span
+            class="key">return</span> <span class="str">"Updated"</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t188"><span class="n"><a href="#t188">188</a></span><span class="t">        <span
+            class="nam">f_r</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t189"><span class="n"><a href="#t189">189</a></span><span class="t">        <span
+            class="nam">f_w</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span
+            class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t190"><span class="n"><a href="#t190">190</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis" id="t191"><span class="n"><a href="#t191">191</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">rename</span><span class="op">(</span><span
+            class="str">r'E:\Semester 8\WEB\Labs\UpdateStudent Record.txt'</span><span class="op">,</span> <span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln" id="t192"><span class="n"><a href="#t192">192</a></span><span class="t">&nbsp;</span><span
+            class="r"></span></p>
+    <p class="run" id="t193"><span class="n"><a href="#t193">193</a></span><span class="t">    <span
+            class="key">def</span> <span class="nam">clear</span><span class="op">(</span><span
+            class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t194"><span class="n"><a href="#t194">194</a></span><span class="t">        <span
+            class="nam">self</span><span class="op">.</span><span class="nam">f_r</span><span class="op">.</span><span
+            class="nam">close</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span
+            class="r"></span></p>
+    <p class="mis show_mis" id="t195"><span class="n"><a href="#t195">195</a></span><span class="t">        <span
+            class="nam">os</span><span class="op">.</span><span class="nam">remove</span><span class="op">(</span><span
+            class="str">"Student Record.txt"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav"
+                                                                               href="https://coverage.readthedocs.io">coverage.py
+            v5.5</a>,
+            created at 2021-03-31 13:36 +0500
+        </p>
+    </div>
+</div>
+</body>
+</html>

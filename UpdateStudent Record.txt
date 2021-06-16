@@ -1,0 +1,9 @@
+Naseer,Aslam,03062403761,Lahore,bitf17a039@pucit.edu.pk,Student
+Sohaib,Salman,03164141268,Karachi,bitf17a040@pucit.edu.pk,CR
+Munna,Aslam2,03062453761,Mumbai,bitf17a030@pucit.edu.pk,Police Officer
+Bash,Salmanqe,03168141068,Layyah,bitf17a042@pucit.edu.pk,Teacher
+Farhan,Aslam,03069403761,Kasur,bitf17a035@pucit.edu.pk,Farmer
+MNA,Aslam,03062403761,Lahore,bitf17a039@pucit.edu.pk,Student
+Haji,Aslam2,03062406761,Larkana,bitf17a010@pucit.edu.pk,Lawyer
+Wahab,Salmanqe,03168141068,KingDom,bitf17a012@pucit.edu.pk,Professor
+Naseer,Aslam,03062403761,Kasur,bitf17a039@pucit.edu.pk,Software Engineer
